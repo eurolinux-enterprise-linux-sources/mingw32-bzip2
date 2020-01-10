@@ -11,7 +11,7 @@
 
 Name:           mingw32-bzip2
 Version:        1.0.5
-Release:        8%{?dist}.4
+Release:        8%{?dist}.5
 Summary:        MinGW port of bzip2 file compression utility
 
 
@@ -138,6 +138,10 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Mon Aug 22 2011 Kai Tietz <ktietz@redhat.com>
+- Adjusted version and rebuild using gcc 4.4.6
+  Related: rhbz#722878
+
 * Mon Dec 27 2010 Andrew Beekhof <abeekhof@redhat.com> - 1.0.5-8.4
 - Rebuild everything with gcc-4.4
   Related: rhbz#658833
